@@ -1,0 +1,97 @@
+@import 'reset.scss';
+@import 'fonts.scss';
+@mixin flex($dir: column, $justify: space-between) {
+    display: flex;
+    flex-direction: $dir;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: $justify;
+}
+main{
+    height: 100vh;
+    background: #00345E;
+    padding: 2% 5%;
+    color: white;
+    font-family: "Roboto Condensed" !important;
+    .signUp{
+        &-form{
+            @include flex($dir: row, $justify: center);
+            &__area{
+                padding: 2%;
+                height: 395px;
+                @include flex;
+                border-radius: 14px;
+                background: #6CC8AA;
+                p{
+                    font-size: 24px;
+                    line-height: 28px;
+                }
+                input{
+                    border: none;
+                    width: 278px;
+                    height: 45px;
+                    border-radius: .875rem;
+                    -webkit-border-radius: .875rem;
+                    -moz-border-radius: .875rem;
+                    -ms-border-radius: .875rem;
+                    -o-border-radius: .875rem;
+                    &::placeholder{
+                        text-align: center;
+                    }
+                }
+                button{
+                    font-family: "Roboto Condensed";
+                    font-style: normal;
+                    font-size: 13px;
+                    line-height: 15px;
+                    text-align: center;
+                    border: none;
+                    &:hover{
+                        opacity: 0.7;
+                        cursor: pointer;
+                    }
+                    &.create{
+                        background: #00345E;
+                        border-radius: 8px;
+                        width: 133px;
+                        height: 32px;
+                        font-size: 18px;
+                        line-height: 21px;
+                        text-align: center;
+                        color: #FFF5F5;
+                    }
+                    &.google{
+                        background: #FFFFFF;
+                        border-radius: 8px;
+                        height: 32px;
+                        color: #3B5998;
+                    }
+                    &.facebook{
+                        background: #3B5998;
+                        border-radius: 8px;
+                        height: 32px;
+                        color: white;
+                    }
+                }
+                &-title{
+                    font-weight: 700;
+                    font-size: 2.25rem;
+                    line-height: 2.6875rem;
+                    text-align: center;
+                }
+            }
+            &__image{
+                padding: 2%;
+                height: 395px;
+                border-radius: 14px;
+                background: #ffffff;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:898px) {
+    .signUp-form__image{
+        display: none;
+    }
+}

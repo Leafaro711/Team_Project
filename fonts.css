@@ -1,0 +1,18 @@
+@font-face {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/roboto-condensed-v19-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("./fonts/roboto-condensed-v19-latin-regular.eot?#iefix") format("embedded-opentype"), url("./fonts/roboto-condensed-v19-latin-regular.woff2") format("woff2"), url("./fonts/roboto-condensed-v19-latin-regular.woff") format("woff"), url("./fonts/roboto-condensed-v19-latin-regular.ttf") format("truetype"), url("./fonts/roboto-condensed-v19-latin-regular.svg#RobotoCondensed") format("svg");
+  /* Legacy iOS */
+}
+@font-face {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./fonts/roboto-condensed-v19-latin-700.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("./fonts/roboto-condensed-v19-latin-700.eot?#iefix") format("embedded-opentype"), url("./fonts/roboto-condensed-v19-latin-700.woff2") format("woff2"), url("./fonts/roboto-condensed-v19-latin-700.woff") format("woff"), url("./fonts/roboto-condensed-v19-latin-700.ttf") format("truetype"), url("./fonts/roboto-condensed-v19-latin-700.svg#RobotoCondensed") format("svg");
+  /* Legacy iOS */
+}
