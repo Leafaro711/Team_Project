@@ -15,10 +15,12 @@ main{
     font-family: "Roboto Condensed" !important;
     .signUp{
         &-form{
+                    margin: 5% 0;
+
             @include flex($dir: row, $justify: center);
             &__area{
                 padding: 2%;
-                height: 395px;
+                height: 400px;
                 @include flex;
                 border-radius: 14px;
                 background: #6CC8AA;
@@ -81,8 +83,10 @@ main{
                 }
             }
             &__image{
+                display: flex;
+                justify-content: center;
                 padding: 2%;
-                height: 395px;
+                height: 400px;
                 border-radius: 14px;
                 background: #ffffff;
             }
@@ -92,6 +96,6 @@ main{
 
 @media screen and (max-width:898px) {
     .signUp-form__image{
-        display: none;
+        display: none !important;
     }
 }
